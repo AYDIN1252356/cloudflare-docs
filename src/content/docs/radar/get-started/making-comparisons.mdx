@@ -27,7 +27,7 @@ The second series has the following parameters:
 
 `name=pt_data&dateRange=7d&location=PT`
 
-All of these parameters are arrays and it is the position in the array that defines the series the filter belongs to. Refer to [NetFlow's endpoint](/api/resources/radar/subresources/netflows/methods/timeseries/) for more information on the available parameters.
+All of these parameters are arrays, and it is the position in the array that defines the series the filter belongs to. Refer to [NetFlow's endpoint](/api/resources/radar/subresources/netflows/methods/timeseries/) for more information on the available parameters.
 
 The response (shortened below for brevity) uses the provided `name` property to wrap the timestamps and corresponding values. If we chart this data, it becomes obvious that Cloudflare received much less traffic from Portugal than from the United States.
 
@@ -49,7 +49,8 @@ The response (shortened below for brevity) uses the provided `name` property to 
         "startTime": "2022-10-26T17:00:00Z",
         "endTime": "2022-11-02T17:00:00Z"
       },
-      "aggInterval": "ONE_HOUR"
+      "aggInterval": "ONE_HOUR",
+			...
     }
   }
 }
